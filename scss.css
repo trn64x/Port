@@ -1,0 +1,1028 @@
+body {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  margin:8vh 0 0 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  overflow: hidden;
+  background:rgba(231,231,231, 1);
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: #333;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('poly.svg');
+    background-repeat: no-repeat;
+    background-size: cover; /* or 'contain' depending on your needs */
+    background-attachment: fixed; /* This makes sure the background doesn't scroll with content */
+    background-position: center;
+}
+#socials{
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  background:none;
+}
+#about1,#socials {
+  scroll-margin-top: 8vh; /* Dostosuj tę wartość do marginesu górnego */
+}
+n{
+  color:#f2beff
+}
+
+#who{
+  margin:40px 0 0 0;
+  display:flex;
+  position:absolute;
+  bottom:0;
+  justify-content:space-between;
+  align-items:center;
+  z-index:4;
+  background:none;
+  height:10vh;
+  background:none;
+  text-align:center;
+  width:100%;
+  background:#271047;
+  font-family:"Rubik Mono One";
+  color:#FDD4FD;
+  font-size:50px;
+  padding:0 40px 0 40px
+}
+#theme{
+  display:flex;
+  align-self:center;
+  width:100%;
+  height:50vh;
+  background:none;
+  top:30%;
+
+}
+#who::after{
+  position:absolute;
+  right:0;
+  top:0;
+  height:280px;
+  width:280px;
+  background:rgb(0, 0, 0);
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+.poly {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%; /* Cover the full height */
+  object-fit: cover; /* Cover the container */
+}
+
+@media (max-width: 1200px) {
+  #social{
+    font-size:medium
+  }
+  .navigates{
+    font-size:medium;
+  }
+  #name{
+    display:none;
+  }
+  #who{
+    width:20%;
+  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  body {
+  margin: 8vh 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto;
+  background: rgba(231, 231, 231, 1);
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('poly.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Contain to ensure no overflow */
+  background-position: center;
+}
+  #github{
+    width:100vw;
+  }
+  .poly {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  #social{
+    font-size:medium
+  }
+  #name{
+    display:none;
+  }
+  .navigates{
+    font-size:medium;
+  }
+  #who{
+    width:20%;
+  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  body {
+  margin: 8vh 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto;
+  background: rgba(231, 231, 231, 1);
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('poly.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Contain to ensure no overflow */
+  background-position: center;
+}
+  #github{
+    width:100vw;
+  }
+  .poly {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  #social{
+    font-size:medium
+  }
+  #name{
+    display:none;
+  }
+  .navigates{
+    font-size:medium;
+  }
+  #who,n{
+    font-size:small;
+    width:100%;
+  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  body {
+  margin: 8vh 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto;
+  background: rgba(231, 231, 231, 1);
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('poly.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Contain to ensure no overflow */
+  background-position: center;
+}
+  #github{
+    width:100vw;
+  }
+  .poly {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+img{
+  height:auto;
+  width:100%;
+}
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 25px;
+}
+#port,.port{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column
+}
+#thanks{
+  
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  
+}
+#together{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+ text-align:center;
+  width:70%;
+  background:#271047;
+  color:#FDD4FD;
+  font-size:80px;
+  font-family:"Rubik Mono One";
+}
+m{
+  font-size:20px;
+  color:#000000;
+  font-weight:600;
+  width:80%;
+}
+.text-bottom{
+  color:black;
+}
+#mim{
+  position:relative;
+  color:black;
+font-size:10rem;
+font-family:"Rubik Mono One";
+}
+#mim::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0; /* Ensure it's aligned to the left */
+  height: 15px;
+  width: 100%;
+  background:linear-gradient(to left, #7f1eff,#9c51ff); /* Added background color */
+}
+.content-main {
+  background: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  margin: 40px auto;
+}
+.content-main p {
+  font-family: "Arial";
+}
+.content-main .content-box {
+  background: rgb(255, 255, 255);
+  font-family: "Rubik Mono One";
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+@keyframes slidein{
+  0%{
+    opacity:0;
+    transform: scale(0);
+  }
+  75%{
+    transform: scale(1.2);
+  }
+  100%{
+    opacity:1;
+    transform: scale(1);
+
+  }
+}
+.content-main,.content-box{
+  animation:slidein 3s forwards;
+}
+.content-main .content-box:before, .content-main .content-box:after {
+  background: rgb(255, 255, 255);
+  
+  content: "";
+  height: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+}
+.content-main .content-box:before {
+  background-color: #eee;
+  top: 0;
+}
+.content-main .content-box:after {
+  background-color: #eee;
+  rotate:180deg;
+  bottom: -2px;
+}/*# sourceMappingURL=scss.css.map */
+
+h1 {
+	font-size: 24px;
+	margin: 10px 0 0 0;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #eeeeee;
+}
+
+p {
+	font-size: 12px;
+	font-weight: light;
+  font-family:arial;
+	color: rgb(0, 0, 0);
+}
+
+span a {
+  object-fit:content;
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #ffffff;
+	}
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+#social{
+  color:#f7d1ff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:4rem;
+  font-family:"Rubik Mono One";
+  position:absolute;
+  left:25%;
+  z-index:1;
+  top:125%;
+background:#271047;
+height:10vh;
+width:50%;
+}
+.container {
+background:#3E2365;
+  border-radius:50px;
+  margin-top:2%;
+  margin-bottom:2%;
+	height:30vh;
+	width:100vw;
+	font-family: 'Helvetica', sans-serif;
+  font-size:x-large;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  
+  
+	align-items: center;
+}
+#name{
+  font-size:x-large;
+  font-family: 'Helvetica', sans-serif;
+  color:#FDD4FD;
+  margin-left:2rem;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 5px #9c51ff solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.searching{
+  font-family:"Rubik Mono One";
+  background:#cccccc;
+  border-radius:50px;
+  border:0;
+}
+form{
+  width:25%;
+  display:flex;
+  justify-content: space-around
+}
+input{
+  width:80%
+}
+.searching:hover{
+  transition: border 100ms;
+  
+  border:3px solid rgb(255,0,255)
+}
+.avatar img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ensures the image fills the avatar without distortion */
+}
+
+.content {
+	width: 80%;
+	max-width: 600px;
+	padding:10px 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.navigates {
+  margin-left: 15vw;
+  text-decoration: none;
+  width: 30vw;
+  color: #2e2e2e;
+  font-size: xx-large;
+  font-family: "Rubik Mono One";
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Added position relative */
+}
+
+.navigates::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Ensure it's aligned to the left */
+  height: 5px;
+  width: 100%;
+  background:linear-gradient(to left, #271047,rgb(117, 57, 151)); /* Added background color */
+}
+@keyframes scale{
+  0%{
+    transform:scale(1)
+  }
+ 
+  100%{
+    transform:scale(1.35);
+
+  }
+}
+@keyframes scaleNot{
+  0%{
+    transform:scale(1.35);
+
+  }
+
+  100%{
+    transform:scale(1)
+  }
+}
+ul{
+  padding-right:20px;
+}
+.navigates:hover{
+  animation:scale 0.2s forwards;
+  color:#D9BDFD;
+  font-size:xx-large
+  
+}
+.navigates:not(:hover) {
+animation:scaleNot 0.2s forwards
+} 
+.navigate{
+  text-decoration: none;
+  width:90px;
+  margin:3px;
+  font-size:medium;
+  font-family:arial;
+  text-align:center;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50px;
+  color:#602696;
+  font-weight:900;
+}
+
+.navigate:hover{
+  transition: font-weight 200ms;
+  border:3px solid #D9BDFD;
+  border-radius:50px;
+  color:rgb(32, 32, 32);
+  font-weight:900;
+  font-size:medium;
+  font-family:arial;
+}
+
+@media (max-width: 1200px) {
+  #social{
+    font-size:medium
+  }
+  .navigates{
+    font-size:medium;
+  }
+  .name{
+    display:none;
+  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  body {
+  margin: 8vh 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto;
+  background: rgba(231, 231, 231, 1);
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: none;
+background-size: cover; /* Ensures the SVG covers the entire background */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+  .avatar {
+    width: 120px;
+	height: 120px;
+	box-sizing: border-box;
+  object-fit:contain;
+	border: 5px rgb(112, 99, 80) solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: 100%; }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .navigates{
+    font-size:medium;
+  }
+  #social{
+    font-size:medium
+  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  body {
+    margin: 8vh 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto;
+    background: rgba(231, 231, 231, 1);
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    color: #333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-image: none;
+
+    background-size: cover; /* Ensures the SVG covers the entire background */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  .avatar {
+    width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+  object-fit:contain;
+	border: 5px rgb(112, 99, 80) solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: 100%; }
+  }
+  .name{
+    display:none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigates{
+    font-size:medium;
+  }
+
+  #social{
+    font-size:medium
+  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+  }
+  body {
+    margin: 8vh 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto;
+    background: rgba(231, 231, 231, 1);
+    font-family: "Roboto Slab";
+    font-weight: 300;
+
+    color: #333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-image: none;
+
+    background-size: cover; /* Ensures the SVG covers the entire background */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  .name{
+    display:none;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+	box-sizing: border-box;
+  object-fit:contain;
+	border: 5px rgb(112, 99, 80) solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: 100%; }
+  }
+}
+
+nav{
+  position:sticky;
+}
+#app {
+  width: 100vw;
+  position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 1000
+}
+@keyframes slidein{
+  0%{
+    opacity:0;
+    transform: scale(0);
+  }
+  75%{
+    transform: scale(1.15);
+  }
+  100%{
+    opacity:1;
+    transform: scale(1);
+
+  }
+}
+.card {
+  flex: 0 0 calc(100% / 4); /* Default for large screens */
+  margin:0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+#left, #right {
+  cursor: pointer;
+  padding: 10px;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+#left {
+  left: 10px;
+}
+
+#right {
+  right: 10px;
+}
+
+#left img, #right img {
+  width: 20px;
+  height: 20px;
+}
+
+#wrapper {
+  
+  background:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90vw;
+  overflow: hidden;
+  position: relative;
+}
+    .done{
+      z-index:2;
+      width:100vw;
+      
+      
+    }
+    .done2{
+      z-index:2;
+      position:absolute;
+      top:100vh;
+    }
+#about{
+  width: 100%;
+    padding: 0;
+    margin: 0;
+  height:92vh;
+  display:flex;
+  
+  font-family:"Rubik Mono One";
+  font-size:larger
+}
+#inset{
+  margin-top:10px;
+  border-radius:50px;
+  width:90%;
+  height:30vh;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(191, 191, 191, 1);
+-moz-box-shadow: inset 0px 0px 15px 0px rgba(191, 191, 191, 1);
+box-shadow: inset 0px 0px 15px 0px rgba(191, 191, 191, 1);
+}
+span {
+  font-size: medium;
+}
+
+.presents {
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: xx-large;
+  font-family: 'Rubik Mono One';
+  width: 100vw;
+  height: 30vh;
+  animation-name:slidein;
+  animation: slidein 1s forwards;
+  background: rgb(243, 243, 226);
+  position: relative;
+padding:10px;
+}
+.presents::after {
+  z-index:105;
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 80px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 200%;
+}
+#item1 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  m{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    color:black;
+  }
+  #mim::after{
+    display:none;
+  }
+  #mim{
+      font-size:xx-large   
+  }
+  #together{
+    font-size:xx-large;
+  }
+  #social{
+    font-size:medium
+  }
+  .done{
+    height:15%;
+  }
+  .name{
+    display:none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .card {
+    flex: 0 0 calc(100% / 4);
+  }
+}
+
+@media (max-width: 768px) {
+  m{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    color:black;
+  }
+  #mim::after{
+    display:none;
+  }
+  #mim{
+    font-size:xx-large   
+}
+  #together{
+    font-size:xx-large;
+  }
+  #social{
+    font-size:medium
+  }
+  .done{
+    height:15%;
+  }
+  .name{
+    display:none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .card {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+h2{
+  color:rgb(255,0,255)
+}
+@media (max-width: 480px) {
+  m{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    color:black;
+  }
+  #mim{
+    font-size:xx-large   
+}
+#mim::after{
+  display:none;
+}
+  #together{
+    font-size:xx-large;
+  }
+  #social{
+    font-size:medium
+  }
+  .done{
+    height:15%;
+  }
+  .name{
+    display:none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .card {
+    flex: 0 0 100%;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
